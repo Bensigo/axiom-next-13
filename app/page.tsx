@@ -1,6 +1,11 @@
 import Image from 'next/image'
+import { Logger } from 'next-axiom';
+import Text from  '@/app/ui/Text'
+
 
 export default function Home() {
+  const log = new Logger();
+  log.info('User logged in server component', { userId: 42 });
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -107,6 +112,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+        <Text>Client component</Text>
       </div>
     </main>
   )
