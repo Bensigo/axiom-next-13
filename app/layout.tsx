@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { reportWebVitals } from 'next-axiom'
 
 const inter = Inter({ subsets: ['latin'] })
 
